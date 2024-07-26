@@ -1,0 +1,122 @@
+.InfoContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.InfoWrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.InfoWrapper p {
+    max-width: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+.InfoTable {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0 1.25rem;
+}
+
+
+.InfoText {
+    font-weight: 400;
+    padding: 0.5rem 0;
+    color: var(--text);
+}
+
+.ActionLink {
+    cursor: pointer;
+}
+
+.SpecText,
+.ActionLink:hover {
+    color: var(--main-accent);
+}
+
+.AccentDivider {
+    margin: 1.25rem;
+    background-color: var(--main-accent);
+}
+
+.TabWrapper {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.TabWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 0 1.25rem;
+}
+
+.Tab {
+    padding: 1.5rem 3.75rem;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: var(--main-accent);
+}
+
+.Tab:hover {
+    background-color: var(--secondary-accent);
+    color: var(--bg);
+}
+
+progress {
+    background-color: transparent;
+    border-radius: 1.25rem;
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    border-radius: 1.25rem;
+    background-color: transparent;
+}
+
+progress::-webkit-progress-bar {
+    background-color: transparent;
+    border-radius: 1.25rem;
+}
+
+progress[value]::-webkit-progress-value {
+    background: linear-gradient(to right, var(--secondary-accent), var(--main-accent));
+    background-color: transparent;
+    border-radius: 1.25rem;
+}
+
+progress[value]::-moz-progress-bar {
+    background: linear-gradient(to right, var(--secondary-accent), var(--main-accent));
+    background-color: transparent;
+    border-radius: 1.25rem;
+}
+
+@media screen and (max-width:767px) {
+    .InfoWrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width:999px) {
+    .InfoContainer {
+        grid-template-columns: 1fr;
+    }
+}

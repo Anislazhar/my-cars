@@ -1,0 +1,32 @@
+.DropDownMenu {
+  background-color: #222222;
+  width: 150px;
+}
+
+.DropDownToggle {
+  display: inline-block;
+  border: 2px #d9176b solid;
+  background-color: #222222;
+  padding: 0.75rem;
+  margin:  0.15rem 1.5rem;
+  cursor: pointer;
+}
+
+.DropdownItem {
+    display: inline-block;
+    color: #222222;
+    background-color: #d9176b;
+    padding: 0.25rem;
+    margin:  0.15rem 1.5rem;
+  }
+  
+  .DropdownItem:hover {
+    background-color: #00e6d6;
+    color: #222222 !important;
+  }
+  
+  .Absolute {
+    position: absolute;
+    right: 0;
+    z-index: 99;
+  }

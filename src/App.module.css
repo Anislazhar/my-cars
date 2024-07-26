@@ -1,0 +1,92 @@
+:root {
+    --text: #000000;
+    --bg: #878080;
+    --mid: #000000;
+    --main-accent: #D9176B;
+    --secondary-accent: #00E6D6;
+    --tertiary-accent: #11DF6A;
+
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    background-color: var(--bg);
+}
+
+.Main {
+    margin-top: 10rem;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2.75rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+h3,
+p {
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+p,
+text,
+input,
+select,
+textarea,
+label,
+small,
+ul,
+li {
+    font-weight: 200;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.preview-image {
+    max-width: 100%;
+}
+
+hr {
+    margin-top: 0.15rem;
+    margin-bottom: 0.15rem;
+}
+
+textarea {
+    resize: none;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr {
+    height: 100%;
+    width: 100%;
+    padding: 0.25rem;
+}
+
+td {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.15rem 0.35rem;
+}

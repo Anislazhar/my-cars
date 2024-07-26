@@ -1,0 +1,38 @@
+.GalleryWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 1.25rem;
+    padding: 0 1.5rem;
+}
+
+.GalleryWrapper img {
+    cursor: pointer;
+    opacity: 0.8;
+    max-width: 160px;
+}
+
+.GalleryWrapper img:hover {
+    opacity: 1;
+}
+
+.MainImage {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .GalleryWrapper {
+        padding: 0 0.35rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .GalleryWrapper {
+        padding: 0 0.15rem;
+        justify-content: space-between;
+    }
+}
+
+

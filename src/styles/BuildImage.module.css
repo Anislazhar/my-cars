@@ -1,0 +1,10 @@
+.Svg {
+    height: 130px;
+    width: 130px;
+    filter: invert(1);
+}
+
+.ImgUpload {
+    max-width: 100%;
+    border: 2px solid var(--main-accent);
+}
