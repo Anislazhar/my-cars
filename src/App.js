@@ -1,10 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Button from "react-bootstrap/Button";
 
 function App() {
   return (
     <div className="App">
-    <h1>hallo Cars</h1>
+      <Button variant="outline-primary">Primary</Button>
+      <h1>hallo Cars</h1>
     </div>
   );
 }
