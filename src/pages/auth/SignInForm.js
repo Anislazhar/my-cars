@@ -1,10 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Col from "react-bootstrap/Col";
-import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
 
 import { Link, useHistory } from "react-router-dom";
@@ -12,6 +7,7 @@ import { Link, useHistory } from "react-router-dom";
 import styles from "../../styles/SignUp.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import appStyles from "../../App.module.css";
+import { Form, Button, Col, Row, Container, Alert } from "react-bootstrap";
 
 function SignInForm() {
   const setCurrentUser = useSetCurrentUser();
@@ -64,9 +60,10 @@ function SignInForm() {
               </Form.Group>
 
               {errors.username?.map((message, idx) => (
-                <p key={idx}>{message}</p>
+                <Alert key={idx} variant="warning">
+                  {message}
+                </Alert>
               ))}
-
               <Form.Group controlId="password">
                 <Form.Label>PASSWORD</Form.Label>
                 <Form.Control
@@ -80,16 +77,18 @@ function SignInForm() {
               </Form.Group>
 
               {errors.password?.map((message, idx) => (
-                <p key={idx}>{message}</p>
+                <Alert key={idx} variant="warning">
+                  {message}
+                </Alert>
               ))}
 
               <Button type="submit" className={btnStyles.Button}>
                 SUBMIT
               </Button>
               {errors.non_field_errors?.map((message, idx) => (
-                <p key={idx} className="mt-3">
+                <Alert key={idx} variant="warning" className="mt-3">
                   {message}
-                </p>
+                </Alert>
               ))}
             </Form>
           </Container>

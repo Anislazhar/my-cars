@@ -30,7 +30,7 @@ const MainNav = () => {
       activeClassName={stylesNav.NavLinkActive}
       to="/builds/create"
     >
-      CREATE YOUR BUILD
+      <h3 className="mt-2">Hi {currentUser?.username} share your car</h3>
     </NavLink>
   );
 

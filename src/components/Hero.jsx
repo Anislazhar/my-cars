@@ -8,24 +8,14 @@ import btnStyles from "../styles/Button.module.css"
 
 const Hero = ({ headline, subline }) => {
     return (
-        <>
-            <div className={styles.Hero}>
-                <h1 className={styles.MegaHeader}>{headline}</h1>
-                <h2 className={styles.HeroBlurb}>{subline}</h2>
-            </div>
-            <div className={styles.ButtonWrapper}>
-                <Link to={`/signup/`} className={btnStyles.Button}>
-                    SIGNUP
-                </Link >
-
-                <Link to={`/signin/`} className={btnStyles.Button}>
-                    LOGIN
-                </Link >
-
-            </div>
-            <hr className={styles.FullDivider} />
-        </>
-    )
+      <>
+        <div className={styles.Hero}>
+          <h1 className={styles.MegaHeader}>{headline}</h1>
+          <h2 className={styles.HeroBlurb}>{subline}</h2>
+        </div>
+        <hr className={styles.FullDivider} />
+      </>
+    );
 }
 
 

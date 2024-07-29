@@ -118,9 +118,7 @@ function BuildCreateForm() {
       ))}
 
       <Form.Group className="text-center">
-        <Form.Label>
-          TELL US ABOUT THE BUILD - PROCESS, ISSUES ETC...
-        </Form.Label>
+        <Form.Label>TELL US ABOUT YOUR CARS - OLD, MOTOR, KM...</Form.Label>
         <Form.Control
           onChange={handleChange}
           className={inputStyles.Input}
@@ -136,7 +134,7 @@ function BuildCreateForm() {
       ))}
 
       <Form.Group className="text-center">
-        <Form.Label>CPU</Form.Label>
+        <Form.Label>PRICE €</Form.Label>
         <Form.Control
           onChange={handleChange}
           className={inputStyles.Input}
