@@ -94,12 +94,12 @@ const Build = (props) => {
     <Card className="bg-dark text-white my-5">
       <Card.Body>
         <Media className="align-items-center justify-content-between">
-          <Link to={`/profiles/${profile_id}`}>
-            {creator}
-          </Link>
+          <Link to={`/profiles/${profile_id}`}>{creator}</Link>
           <div className="d-flex align-items-center">
             <span>{updated_at}</span>
-            {is_owner && BuildPage && <Popout handleEdit={handleEdit} handleDelete={handleDelete} />}
+            {is_owner && BuildPage && (
+              <Popout handleEdit={handleEdit} handleDelete={handleDelete} />
+            )}
           </div>
         </Media>
       </Card.Body>
@@ -111,37 +111,37 @@ const Build = (props) => {
         {content && <p>{content}</p>}
         <span className="text-muted">{updated_at}</span>
         <div className={styles.InfoContainer}>
-            <h3 className={styles.InfoText}>SPECS</h3>
+          <h3 className={styles.InfoText}>SPECS</h3>
           <table className={styles.InfoTable}>
             <tbody>
-            <tr className={styles.InfoGridRow}>
-              <td className={styles.SpecText}>CPU:</td>
-              <td>{build_cpu}</td>
-            </tr>
-            <tr className={styles.InfoGridRow}>
-              <td className={styles.SpecText}>GPU:</td>
-              <td>{build_gpu}</td>
-            </tr>
-            <tr className={styles.InfoGridRow}>
-              <td className={styles.SpecText}>MOBO:</td>
-              <td>{build_mobo}</td>
-            </tr>
-            <tr className={styles.InfoGridRow}>
-              <td className={styles.SpecText}>RAM:</td>
-              <td>{build_ram}</td>
-            </tr>
-            <tr className={styles.InfoGridRow}>
-              <td className={styles.SpecText}>DISK:</td>
-              <td>{build_disk}</td>
-            </tr>
-            <tr className={styles.InfoGridRow}>
-              <td className={styles.SpecText}>CASE:</td>
-              <td>{build_case}</td>
-            </tr>
-            <tr className={styles.InfoGridRow}>
-              <td className={styles.SpecText}>MONITOR:</td>
-              <td>{build_monitor}</td>
-            </tr>
+              <tr className={styles.InfoGridRow}>
+                <td className={styles.SpecText}>Model:</td>
+                <td>{build_cpu}</td>
+              </tr>
+              <tr className={styles.InfoGridRow}>
+                <td className={styles.SpecText}>Fuel Type:</td>
+                <td>{build_gpu}</td>
+              </tr>
+              <tr className={styles.InfoGridRow}>
+                <td className={styles.SpecText}>1st registration from:</td>
+                <td>{build_mobo}</td>
+              </tr>
+              <tr className={styles.InfoGridRow}>
+                <td className={styles.SpecText}>Mileage:</td>
+                <td>{build_ram}</td>
+              </tr>
+              <tr className={styles.InfoGridRow}>
+                <td className={styles.SpecText}>Number of Owners:</td>
+                <td>{build_disk}</td>
+              </tr>
+              <tr className={styles.InfoGridRow}>
+                <td className={styles.SpecText}>Power:</td>
+                <td>{build_case}</td>
+              </tr>
+              <tr className={styles.InfoGridRow}>
+                <td className={styles.SpecText}>Vehicle Price:</td>
+                <td>{build_monitor}</td>
+              </tr>
             </tbody>
           </table>
         </div>
@@ -152,25 +152,23 @@ const Build = (props) => {
             <>
               <span>
                 <Player
-                  style={{ height: '60px', width: '60px' }}
+                  style={{ height: "60px", width: "60px" }}
                   src="https://lottie.host/5248049a-bfbc-4d28-8a5d-116ee59f38d9/Vhq6wYKNHT.json"
-                  className='player'
+                  className="player"
                   autoplay
                   loop
                   direction="1"
                   speed={0.25}
                 />
-                <span className={styles.InfoText}>
-                  YOUR BUILD
-                </span>
+                <span className={styles.InfoText}>YOUR BUILD</span>
               </span>
             </>
           ) : save_id ? (
             <span onClick={handleUnsave}>
               <Player
-                style={{ height: '60px', width: '60px' }}
+                style={{ height: "60px", width: "60px" }}
                 src="https://lottie.host/438c676f-e32f-43de-b8d2-35d96a20bb27/3NxOp9eaJZ.json"
-                className='player'
+                className="player"
                 loop
                 autoplay
                 direction="-1"
@@ -183,9 +181,9 @@ const Build = (props) => {
           ) : currentUser ? (
             <span onClick={handleSave}>
               <Player
-                style={{ height: '60px', width: '60px' }}
+                style={{ height: "60px", width: "60px" }}
                 src="https://lottie.host/c00eb3b8-7360-4d38-949e-d187b7fd681f/cn0JQNmpCD.json"
-                className='player'
+                className="player"
                 loop
                 autoplay
                 speed={0.5}
@@ -196,28 +194,27 @@ const Build = (props) => {
             </span>
           ) : (
             <span>
-            <Link to={`/signin`}>
-            <Player
-            style={{ height: '60px', width: '60px' }}
-            src="https://lottie.host/8c811ad6-b23d-4f05-95dd-0d1595afb074/yKMMfli1tg.json"
-            className='player'
-            loop
-            autoplay
-            speed={0.5}
-            />
-          </Link>
-            <span className={`${styles.InfoText} ${styles.ActionLink}`}>
-              LOGIN TO SAVE THIS BUILD
+              <Link to={`/signin`}>
+                <Player
+                  style={{ height: "60px", width: "60px" }}
+                  src="https://lottie.host/8c811ad6-b23d-4f05-95dd-0d1595afb074/yKMMfli1tg.json"
+                  className="player"
+                  loop
+                  autoplay
+                  speed={0.5}
+                />
+              </Link>
+              <span className={`${styles.InfoText} ${styles.ActionLink}`}>
+                LOGIN TO SAVE THIS BUILD
               </span>
-          </span>
-            
+            </span>
           )}
 
           <p className={styles.InfoText}>
             <Player
-              style={{ height: '60px', width: '60px' }}
+              style={{ height: "60px", width: "60px" }}
               src="https://lottie.host/bf6bfa0f-58ad-4338-a749-bf92aedad413/lVeLTIZ8fP.json"
-              className='player'
+              className="player"
               loop
               autoplay
               speed={0.5}
@@ -227,9 +224,9 @@ const Build = (props) => {
 
           <Link to={`/builds/${id}`}>
             <Player
-              style={{ height: '60px', width: '60px' }}
+              style={{ height: "60px", width: "60px" }}
               src="https://lottie.host/2828ad73-ac2d-4910-ab0c-9b5b998a231d/9iggnk7HKG.json"
-              className='player'
+              className="player"
               loop
               autoplay
               speed={1}
@@ -240,10 +237,9 @@ const Build = (props) => {
             </span>
           </Link>
         </div>
-
       </Card.Body>
     </Card>
-  )
+  );
 }
 
 export default Build

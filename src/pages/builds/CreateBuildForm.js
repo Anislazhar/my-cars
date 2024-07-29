@@ -103,7 +103,7 @@ function BuildCreateForm() {
     <div className="text-center">
       {/* Add your form fields here */}
       <Form.Group className="text-center">
-        <Form.Label>CAR NAME</Form.Label>
+        <Form.Label>CAR Make</Form.Label>
         <Form.Control
           onChange={handleChange}
           className={inputStyles.Input}
@@ -134,7 +134,7 @@ function BuildCreateForm() {
       ))}
 
       <Form.Group className="text-center">
-        <Form.Label>PRICE €</Form.Label>
+        <Form.Label>Model</Form.Label>
         <Form.Control
           onChange={handleChange}
           className={inputStyles.Input}
@@ -149,7 +149,7 @@ function BuildCreateForm() {
       ))}
 
       <Form.Group className="text-center">
-        <Form.Label>MOTHERBOARD</Form.Label>
+        <Form.Label>1st registration from</Form.Label>
         <Form.Control
           onChange={handleChange}
           className={inputStyles.Input}
@@ -164,7 +164,7 @@ function BuildCreateForm() {
       ))}
 
       <Form.Group className="text-center">
-        <Form.Label>RAM</Form.Label>
+        <Form.Label>Mileage</Form.Label>
         <Form.Control
           onChange={handleChange}
           className={inputStyles.Input}
@@ -179,7 +179,7 @@ function BuildCreateForm() {
       ))}
 
       <Form.Group className="text-center">
-        <Form.Label>STORAGE</Form.Label>
+        <Form.Label>Number of Owners</Form.Label>
         <Form.Control
           onChange={handleChange}
           className={inputStyles.Input}
@@ -194,7 +194,7 @@ function BuildCreateForm() {
       ))}
 
       <Form.Group className="text-center">
-        <Form.Label>GPU</Form.Label>
+        <Form.Label>Fuel Type</Form.Label>
         <Form.Control
           onChange={handleChange}
           className={inputStyles.Input}
@@ -209,7 +209,7 @@ function BuildCreateForm() {
       ))}
 
       <Form.Group className="text-center">
-        <Form.Label>CASE</Form.Label>
+        <Form.Label>Power</Form.Label>
         <Form.Control
           onChange={handleChange}
           className={inputStyles.Input}
@@ -224,7 +224,7 @@ function BuildCreateForm() {
       ))}
 
       <Form.Group className="text-center">
-        <Form.Label>MONITOR</Form.Label>
+        <Form.Label>Vehicle Price</Form.Label>
         <Form.Control
           onChange={handleChange}
           className={inputStyles.Input}
