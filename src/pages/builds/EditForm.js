@@ -180,7 +180,7 @@ function PostCreateForm() {
         <div className="text-center">
             {/* Add your form fields here */}
             <Form.Group className="text-center">
-                <Form.Label>BUILD NAME</Form.Label>
+                <Form.Label>CAR NAME</Form.Label>
                 <Form.Control onChange={handleChange} className={inputStyles.Input} type="text" name="build_name" value={build_name} />
             </Form.Group>
 

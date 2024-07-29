@@ -29,7 +29,7 @@ const SignUpForm = () => {
     event.preventDefault();
     try {
       await axios.post("/dj-rest-auth/registration/", signUpFormData);
-      history.push("/signin");
+      history.push("/");
     } catch (err) {
       const responseErrors = err.response?.data;
       if (responseErrors) {
@@ -62,7 +62,7 @@ const SignUpForm = () => {
               </Form.Group>
 
               {errors.username?.map((message, idx) => (
-                <Alert variant="warning" key={idx}>
+                <Alert key={idx} variant="warning">
                   {message}
                 </Alert>
               ))}
@@ -80,7 +80,9 @@ const SignUpForm = () => {
               </Form.Group>
 
               {errors.password1?.map((message, idx) => (
-                <p key={idx}>{message}</p>
+                <Alert key={idx} variant="warning">
+                  {message}
+                </Alert>
               ))}
 
               <Form.Group controlId="password-2">
@@ -96,16 +98,18 @@ const SignUpForm = () => {
               </Form.Group>
 
               {errors.password2?.map((message, idx) => (
-                <p key={idx}>{message}</p>
+                <Alert key={idx} variant="warning">
+                  {message}
+                </Alert>
               ))}
 
               <Button className={btnStyles.Button} type="submit">
                 SUBMIT
               </Button>
               {errors.non_field_errors?.map((message, idx) => (
-                <p key={idx} className="mt-3">
+                <Alert key={idx} variant="warning" className="mt-3">
                   {message}
-                </p>
+                </Alert>
               ))}
             </Form>
           </Container>
@@ -120,7 +124,7 @@ const SignUpForm = () => {
         <Col
           md={6}
           className={`my-auto d-none d-md-block p-2 ${styles.SignUpCol}`}
-        ></Col>
+        />
       </Row>
     </>
   );

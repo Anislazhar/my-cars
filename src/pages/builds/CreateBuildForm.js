@@ -103,102 +103,141 @@ function BuildCreateForm() {
     <div className="text-center">
       {/* Add your form fields here */}
       <Form.Group className="text-center">
-        <Form.Label>BUILD NAME</Form.Label>
-        <Form.Control onChange={handleChange} className={inputStyles.Input} type="text" name="build_name" value={build_name} />
+        <Form.Label>CAR NAME</Form.Label>
+        <Form.Control
+          onChange={handleChange}
+          className={inputStyles.Input}
+          type="text"
+          name="build_name"
+          value={build_name}
+        />
       </Form.Group>
 
       {errors?.build_name?.map((message, idx) => (
-        <sub key={idx}>
-          {message}
-        </sub>
+        <sub key={idx}>{message}</sub>
       ))}
 
       <Form.Group className="text-center">
-        <Form.Label>TELL US ABOUT THE BUILD - PROCESS, ISSUES ETC...</Form.Label>
-        <Form.Control onChange={handleChange} className={inputStyles.Input} as="textarea" rows={8} name="content" value={content} />
+        <Form.Label>
+          TELL US ABOUT THE BUILD - PROCESS, ISSUES ETC...
+        </Form.Label>
+        <Form.Control
+          onChange={handleChange}
+          className={inputStyles.Input}
+          as="textarea"
+          rows={8}
+          name="content"
+          value={content}
+        />
       </Form.Group>
 
       {errors?.content?.map((message, idx) => (
-        <sub key={idx}>
-          {message}
-        </sub>
+        <sub key={idx}>{message}</sub>
       ))}
 
       <Form.Group className="text-center">
         <Form.Label>CPU</Form.Label>
-        <Form.Control onChange={handleChange} className={inputStyles.Input} type="text" name="build_cpu" value={build_cpu} />
+        <Form.Control
+          onChange={handleChange}
+          className={inputStyles.Input}
+          type="text"
+          name="build_cpu"
+          value={build_cpu}
+        />
       </Form.Group>
 
       {errors?.build_cpu?.map((message, idx) => (
-        <sub key={idx}>
-          {message}
-        </sub>
+        <sub key={idx}>{message}</sub>
       ))}
 
       <Form.Group className="text-center">
         <Form.Label>MOTHERBOARD</Form.Label>
-        <Form.Control onChange={handleChange} className={inputStyles.Input} type="text" name="build_mobo" value={build_mobo} />
+        <Form.Control
+          onChange={handleChange}
+          className={inputStyles.Input}
+          type="text"
+          name="build_mobo"
+          value={build_mobo}
+        />
       </Form.Group>
 
       {errors?.build_mobo?.map((message, idx) => (
-        <sub key={idx}>
-          {message}
-        </sub>
+        <sub key={idx}>{message}</sub>
       ))}
 
       <Form.Group className="text-center">
         <Form.Label>RAM</Form.Label>
-        <Form.Control onChange={handleChange} className={inputStyles.Input} type="text" name="build_ram" value={build_ram} />
+        <Form.Control
+          onChange={handleChange}
+          className={inputStyles.Input}
+          type="text"
+          name="build_ram"
+          value={build_ram}
+        />
       </Form.Group>
 
       {errors?.build_ram?.map((message, idx) => (
-        <sub key={idx}>
-          {message}
-        </sub>
+        <sub key={idx}>{message}</sub>
       ))}
 
       <Form.Group className="text-center">
         <Form.Label>STORAGE</Form.Label>
-        <Form.Control onChange={handleChange} className={inputStyles.Input} type="text" name="build_disk" value={build_disk} />
+        <Form.Control
+          onChange={handleChange}
+          className={inputStyles.Input}
+          type="text"
+          name="build_disk"
+          value={build_disk}
+        />
       </Form.Group>
 
       {errors?.build_disk?.map((message, idx) => (
-        <sub key={idx}>
-          {message}
-        </sub>
+        <sub key={idx}>{message}</sub>
       ))}
 
       <Form.Group className="text-center">
         <Form.Label>GPU</Form.Label>
-        <Form.Control onChange={handleChange} className={inputStyles.Input} type="text" name="build_gpu" value={build_gpu} />
+        <Form.Control
+          onChange={handleChange}
+          className={inputStyles.Input}
+          type="text"
+          name="build_gpu"
+          value={build_gpu}
+        />
       </Form.Group>
 
       {errors?.build_gpu?.map((message, idx) => (
-        <sub key={idx}>
-          {message}
-        </sub>
+        <sub key={idx}>{message}</sub>
       ))}
 
       <Form.Group className="text-center">
         <Form.Label>CASE</Form.Label>
-        <Form.Control onChange={handleChange} className={inputStyles.Input} type="text" name="build_case" value={build_case} />
+        <Form.Control
+          onChange={handleChange}
+          className={inputStyles.Input}
+          type="text"
+          name="build_case"
+          value={build_case}
+        />
       </Form.Group>
 
       {errors?.build_case?.map((message, idx) => (
-        <sub key={idx}>
-          {message}
-        </sub>
+        <sub key={idx}>{message}</sub>
       ))}
 
       <Form.Group className="text-center">
         <Form.Label>MONITOR</Form.Label>
-        <Form.Control onChange={handleChange} className={inputStyles.Input} type="text" name="build_monitor" value={build_monitor} />
+        <Form.Control
+          onChange={handleChange}
+          className={inputStyles.Input}
+          type="text"
+          name="build_monitor"
+          value={build_monitor}
+        />
       </Form.Group>
 
       {errors?.build_monitor?.map((message, idx) => (
-        <sub key={idx}>
-          {message}
-        </sub>
+        <sub key={idx}>{message}</sub>
       ))}
 
       <Button
